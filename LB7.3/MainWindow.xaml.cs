@@ -24,13 +24,22 @@ namespace LB7._3
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Store mystore = new Store();
-            string str = textBox1.Text;
-            int number = int.Parse(str);
-            MessageBox.Show(mystore[number]);
+            
+            try
+            {
+                Store mystore = new Store();
+                string str = textBox1.Text;
+                int number = int.Parse(str);
+                MessageBox.Show(mystore[number]);
 
-            string name = textBox2.Text;
-            MessageBox.Show(mystore[name]);
+                string name = textBox2.Text;
+                MessageBox.Show(mystore[name]);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Заполните все поля!");
+            }
         }
     }
 }
