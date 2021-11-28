@@ -38,7 +38,7 @@ namespace LB7._3
             catch (Exception)
             {
 
-                MessageBox.Show("Заполните все поля!");
+                MessageBox.Show("Ошибка!");
             }
         }
     }
